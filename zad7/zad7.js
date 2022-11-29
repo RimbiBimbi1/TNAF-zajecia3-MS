@@ -2,7 +2,7 @@ const isHappyNumber = a => {
     let result = a;
     let numbers;
 
-    for(let i=0;true;i++) {
+    for(;;) {
         if(result%2 === 0)return false;
         numbers = result.toString().split('');
         result=0;
@@ -11,7 +11,6 @@ const isHappyNumber = a => {
 
         if(result === 1)return true;
     }
-    return false;
 }
 
 console.log(isHappyNumber(27))
